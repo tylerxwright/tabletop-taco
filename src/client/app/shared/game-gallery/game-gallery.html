@@ -1,0 +1,74 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h3>{{vm.title}}</h3>
+	</div>
+</div>
+<div class="well">
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="row">
+					<div class="col-md-3"><a href="#" class="thumbnail"><img class="img-responsive" src="http://placehold.it/250x160" alt="Thumb11"></a>
+					</div>
+					<div class="col-md-3"><a href="#" class="thumbnail"><img class="img-responsive" src="http://placehold.it/250x160" alt="Thumb12"></a>
+					</div>
+					<div class="col-md-3"><a href="#" class="thumbnail"><img class="img-responsive" src="http://placehold.it/250x160" alt="Thumb13"></a>
+					</div>
+					<div class="col-md-3"><a href="#" class="thumbnail"><img class="img-responsive" src="http://placehold.it/250x160" alt="Thumb14"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		</ol>
+	</div>
+</div>
+
+<!--<div class="row">
+	<div class="container-fluid">
+		<div class="grid">
+			<div class="grid-item col-md-2 col-sm-3 col-xs-6" ng-repeat="game in vm.games">
+				<img class="img-responsive" src="http://placeholdit.imgix.net/~text?txtsize=16&txt=Game Name&w=120&h=120" />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 col-sm-3 col-xs-6" ng-repeat="game in vm.games">
+			<a class="thumbnail" ui-sref="game({gameName: '{{game.name}}'})">
+				<div class="card">
+					<div class="card-block">
+						<img class="img-responsive" src="images/game_art/{{game.image}}" />
+					</div>
+					<div class="card-footer text-muted text-center">
+						{{game.name}}
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+-->
+<!--</div>-->
+
+<!--
+<div class="row">
+	<div class="col-sm-12">
+		<div style="margin: 20px 0; width: 100%;">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>{{vm.title}}</h3>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-6 game-thumb thumb" ng-repeat="game in vm.games">
+					<a class="thumbnail" ui-sref="game({gameName: '{{game.name}}'})">
+						<img class="img-responsive" src="images/game_art/{{game.image}}" />
+						<div class="caption text-center" data-ng-bind="game.name"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+-->

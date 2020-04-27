@@ -1,17 +1,16 @@
 'use strict';
 
-require('./game-gallery.scss');
-
 TacoGameGallery.$inject = [];
 function TacoGameGallery() {
 	return {
 		restrict: 'E',
-		template: require('./game-gallery.html'),
+		template: require('./templates/game-gallery.html'),
 		controllerAs: 'vm',
 		controller: require('./game-gallery.controller.js'),
 		bindToController: true,
 		scope: {
 			games: '=?',
+			loading: '=',
 			title: '@'
 		},
 		link: function(scope, element, attrs, vm) {

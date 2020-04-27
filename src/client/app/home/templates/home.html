@@ -2,15 +2,18 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
 			<form class="form-inline">
-				<div class="input-group top-buffer full-width">
-					<input type="text" class="form-control" placeholder="Search for a game"/>
-					<span class="input-group-btn">
-						<button type="submit" class="btn btn-search">Search</button>
+				<div class="input-group fill-width top-buffer">
+					<span class="input-group-addon" id="basic-addon1">
+						<i class="fa fa-search"></i>
 					</span>
+					<input type="text" class="form-control" placeholder="Search for a game" aria-describedby="basic-addon2">
+					<span class="input-group-addon" id="basic-addon2">Search</span>
 				</div>
 			</form>
 		</div>
 	</div>
-	<taco-game-gallery data-title="Popular Games" data-games="vm.popularGames"></taco-game-gallery>
-	<!--<taco-game-gallery data-title="Newest Games" data-games="vm.newestGames"></taco-game-gallery>-->
+	<div style="padding: 0 15px">
+		<taco-game-gallery data-title="Popular Games" data-games="vm.popularGames" data-loading="vm.isLoadingPopularGames"></taco-game-gallery>
+		<taco-game-gallery data-title="Newest Games" data-games="vm.newestGames" data-loading="vm.isLoadingNewestGames"></taco-game-gallery>
+	</div>
 </div>

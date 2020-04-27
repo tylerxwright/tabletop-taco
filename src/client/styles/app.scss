@@ -1,3 +1,5 @@
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+
 html {
 	height: 100%;
 }
@@ -14,13 +16,23 @@ body {
 	height: 100%;
 }
 
+.fill-width {
+	width: 100%;
+}
+
 .no-padding {
    padding: 0 !important;
    margin: 0 !important;
 }
 
-#sidebar {
-  width: inherit;
+.core-container {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.sidebar {
+	width: inherit;
   padding-top: 15px;
   min-width: 220px;
   max-width: 220px;
@@ -30,6 +42,15 @@ body {
   position:relative;
   overflow-y:auto;
   overflow-x:hidden;
+	&.categories {
+		padding: 0;
+	}
+	&.well {
+		border-top: none;
+		border-bottom: none;
+		border-radius: 0;
+		margin-bottom: 0;
+	}
 }
 
 #main {

@@ -1,0 +1,31 @@
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+
+.clarifications-list-wrapper {
+	overflow: auto;
+	height: 100%;
+	.clarifications-list {
+		.clarifications-list-header {
+			height: 36px;
+			width: 100%;
+			line-height: 34px;
+			background-color: $gray;
+			text-align: right;
+			padding-right: 10px;
+			.btn {
+				vertical-align: middle;
+			}
+		}
+		.clarifications-list-container {
+			padding: 15px;
+			.panel {
+				cursor: pointer;
+				&:hover {
+					box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.25);
+				}
+			}
+			.panel-footer {
+				padding: 3px 15px;
+			}
+		}
+	}
+}

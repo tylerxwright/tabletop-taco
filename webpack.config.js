@@ -12,8 +12,7 @@ module.exports = {
 		vendor: [
 			'angular', 'angular-animate', 'angular-sanitize',
 			'angular-resource', 'angular-cookies', 'angular-ui-router',
-			'angular-ui-bootstrap', 'bootstrap-loader',
-			'angular-material', 'angular-material/angular-material.scss', 'font-awesome-webpack'
+			'angular-ui-bootstrap', 'bootstrap-loader', 'font-awesome-webpack'
 		],
 		app: './core/bootstrap.js'
 	},
@@ -56,7 +55,6 @@ module.exports = {
 				loader: "raw-loader"
 			},
 			{
-				//IMAGE LOADER
 				test: /\.(jpeg|jpg|png|gif|ico)$/i,
 				loader:'file-loader?name=images/[path][name].[ext]&context=./src/client/images'
 			},

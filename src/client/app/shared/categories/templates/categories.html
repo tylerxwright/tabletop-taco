@@ -1,0 +1,20 @@
+<div class="sidebar categories well">
+	<div class="categories-header">
+		Categories
+	</div>
+	<div class="categories-menu">
+		<span data-ng-if="!vm.selectedCategory">Select a Category</span>
+		<a href data-ng-if="vm.selectedCategory" data-ng-click="vm.navigateBack()">Back</a> -
+		<span>{{vm.selectedCategory.name}}</span>
+	</div>
+	<div class="categories-content" data-taco-block-loading-indicator data-loading="vm.isLoading" data-message="Loading">
+		<div class="list-group">
+			<button class="list-group-item"
+				data-ng-repeat="category in vm.categories"
+				data-ng-bind="category.name"
+				data-ng-class="category.id === vm.selectedCategory.id ? 'active' : ''"
+				data-ng-click="vm.changeCategory(category)">
+			</button>
+		</div>
+	</div>
+</div>

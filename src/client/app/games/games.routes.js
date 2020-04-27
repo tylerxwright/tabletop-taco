@@ -4,7 +4,14 @@ gamesRoutes.$inject = ['$stateProvider', '$locationProvider', '$urlRouterProvide
 function gamesRoutes($stateProvider, $locationProvider, $urlRouterProvider) {
 	$stateProvider.state('game', {
 		url: '/games/:gameName',
-		template: require('./templates/game.html')
+		template: require('./templates/game.html'),
+		controller: 'GamesController',
+		controllerAs: 'vm',
+		resolve: {
+			game: function($stateParams, TacoGamesService) {
+				return TacoGamesService.getGameBySafeName($stateParams.gameName);
+			}
+		}
 	});
 }
 

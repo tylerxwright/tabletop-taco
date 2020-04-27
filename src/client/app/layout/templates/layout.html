@@ -1,7 +1,9 @@
 <div class="fill-height" ng-controller="LayoutController as vm">
 	<div ng-include="'app/layout/templates/header.html'"></div>
 
-	<div id="main-container" class="container-fluid fill-height" ui-view></div>
+	<div id="main-container" class="container-fluid fill-height">
+		<div class="row fill-height" ui-view></div>
+	</div>
 
 	<div ng-include="'app/layout/templates/footer.html'"></div>
 </div>

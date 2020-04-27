@@ -1,0 +1,21 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h3>{{vm.title}}</h3>
+	</div>
+</div>
+<div class="game-gallery well" style="padding-bottom: 0;" data-taco-block-loading-indicator data-loading="vm.loading" data-message="Loading">
+	<div class="row">
+		<div ng-repeat="game in vm.games">
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-6 text-center">
+				<a class="thumbnail" ui-sref="game({gameName: '{{game.safe_name}}'})">
+					<img class="img-responsive" src="images/game_art/{{game.image}}"/>
+					<span data-ng-bind="game.name"></span>
+				</a>
+			</div>
+			<div class="clearfix visible-xs-block" data-ng-if="($index + 1) % 2 === 0"></div>
+			<div class="clearfix visible-sm-block" data-ng-if="($index + 1) % 4 === 0"></div>
+			<div class="clearfix visible-md-block" data-ng-if="($index + 1) % 6 === 0"></div>
+			<div class="clearfix visible-lg-block" data-ng-if="($index + 1) % 12 === 0"></div>
+		</div>
+	</div>
+</div>

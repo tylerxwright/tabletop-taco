@@ -1,1 +1,23 @@
-clarification
+<div class="container-fluid clarification">
+	<div class="row">
+		<div class="clarification-action-bar">
+			<div class="pull-left">
+				<a ui-sref="game.clarifications({categoryId: vm.clarification.parent_category_id})">Back to Clarifications</a>
+			</div>
+			<div class="pull-right">
+				<button class="btn btn-primary btn-xs" data-ng-click="vm.clarify()">Make a clarification</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-sm-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong data-ng-bind="vm.clarification.title"></strong>
+				</div>
+				<div class="panel-body">
+					{{vm.clarification.body}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

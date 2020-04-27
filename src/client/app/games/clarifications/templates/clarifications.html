@@ -1,3 +1,22 @@
-<div>Categories</div>
-<div>Clarification List</div>
-<div>Clarification</div>
+{{$state.current.name}}
+<div class="fill-height" ui-view="">
+	<taco-categories game="vm.game" on-category-change="vm.onCategoryChange(category)" starting-category-id="vm.startingCategoryId"></taco-categories>
+	<div class="container-fluid clarifications-list-wrapper">
+		<div class="row">
+			<div class="clarifications-list">
+				<div class="clarifications-list-header">
+					<button class="btn btn-primary btn-xs" data-ng-click="vm.openNewClarification()">Ask for a clarification</button>
+				</div>
+				<div class="clarifications-list-container" data-taco-block-loading-indicator data-loading="vm.isLoading" data-message="Loading">
+					<div class="panel panel-default" data-ng-repeat="clarification in vm.clarifications" data-ng-click="vm.navigateToClarification(clarification)">
+						<div class="panel-heading">
+							<h3 class="panel-title" data-ng-bind="clarification.title"></h3>
+						</div>
+					  <div class="panel-body" data-ng-bind="clarification.body"></div>
+						<div class="panel-footer">Panel footer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

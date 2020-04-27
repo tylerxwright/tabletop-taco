@@ -1,0 +1,14 @@
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+
+.clarification {
+	.clarification-action-bar {
+		height: 36px;
+		width: 100%;
+		line-height: 34px;
+		background-color: $gray-lighter;
+		border-bottom: solid 1px $table-border-color;
+		margin-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

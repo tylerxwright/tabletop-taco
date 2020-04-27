@@ -8,7 +8,6 @@ var dependencies = [
 	'ngAnimate',
 	'ui.router',
 	'ui.bootstrap',
-	'ngMaterial',
 	/* modules */
 	require('./shared/shared.module.js').name,
 	require('./layout/layout.module.js').name,

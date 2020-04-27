@@ -1,0 +1,31 @@
+TODO:
+
+1. Clarifications can have one or more rule categories, so these need to be displayed in the footer in the clarifications list and on the details screen.
+
+2. If you just navigated from a clarification list and you choose to go back from the details screen, that is when we show the last category search list and related clarifications.
+
+3. If you did not navigate to the clarification details page from the category selector, going back should default your categories at the root.
+
+4. When you add a clarification, you need to multiselect categories and you also need to be able to create new categories.
+
+5. If you created the clarification or are an admin, you need to be able to edit and delete the clarification.
+
+6. The clarifications list needs a search and a pager.
+
+7. I need to modify the api to return a list of rule categories for each clarification in the list and on the details page.
+
+8. Research why categories is being activated multiple times.
+
+9. Figure out how to get game into a state when you did not come from one with game present.
+
+10. The home page search needs to autocomplete and allow you to select directly from that dropdown.
+
+11. If you just click search from the home page, you are redirected to search results where it is just a game gallery.
+
+12. Game gallery directive needs a pager.
+
+13. Figure out why webpack creates all kinds of strange sub folders in chrome.
+
+14. Get webpack to create a deploy folder.
+
+15. Do we need breadcrumbs?
